@@ -1,0 +1,5 @@
+runtime: nodejs14
+service: api
+env_variables:
+  MONGODB_URI: ${MONGODB_URI}
+  SECRET_KEY: ${SECRET_KEY}
