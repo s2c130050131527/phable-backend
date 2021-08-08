@@ -4,7 +4,6 @@ steps:
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'create-env']
     env:
-      - 'SECRET_KEY=${_SECRET_KEY}'
       - 'MONGODB_URI=${_MURI}'
   - name: 'gcr.io/cloud-builders/gcloud'
     args: ['app', 'deploy', 'app1.yaml', '-v', '$_GAE_VERSION']
