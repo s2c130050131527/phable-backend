@@ -1,0 +1,17 @@
+The backend repo for this project is [phable-backend][1]{:target='_blank'}
+
+Running steps on local 
+
+ - create a .env file in root
+ - paste this line : **MONGODB_URI="mongodb+srv://phable:K8TttRtLJZQDNqSu@cluster0.w8fno.mongodb.net/tdee?retryWrites=true&w=majority"**
+ - Run command to load env **export $(cat .env | xargs)**
+ - yarn install
+ - yarn start
+
+API Implemented:
+
+ 1. **tdee/count** -  to calculate tdee
+ 2. **saveuser** - to persist user data on backend
+ 3. **getusers** - to get data of stored users.
+
+  [1]: https://github.com/s2c130050131527/phable-backend
